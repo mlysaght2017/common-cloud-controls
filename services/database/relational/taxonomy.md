@@ -10,7 +10,7 @@ use in financial services ecosystems.
 | ----------- | ------- | ----------- |
 | CCC-RDMS-1  | SQL Support | Properly handle queries in the SQL language. |
 | CCC-RDMS-2  | Vertical Scaling | Users may increase or decrease resource allocation. |
-| CCC-RDMS-3 | Horizontal Scaling | Read replicas of the primary database can be created. |
+| CCC-RDMS-3  | Horizontal Scaling | Read replicas of the primary database can be created. |
 | CCC-RDMS-4  | Multi-region | Read replicas can be created in multiple user-specified regions. |
 | CCC-RDMS-5  | Automated Backups | Backups can be automatically created and stored according to user specification.|
 | CCC-RDMS-6  | Point in Time Recovery | Backups can be restored on demand to a specific point in time. |
@@ -21,4 +21,17 @@ use in financial services ecosystems.
 | CCC-RDMS-11 | Monitoring | Configurable metrics are available for user inspection. |
 | CCC-RDMS-12 | Alerting | Configurable alerts can be enabled. |
 | CCC-RDMS-13 | Failover | Standby database can be implemented for failover when the primary can't be reached. |
+
+<a id="CCC-RDMS-1"></a>
+<a id="CCC-RDMS-2"></a>
+<a id="CCC-RDMS-3"></a>
+<a id="CCC-RDMS-4"></a>
+<a id="CCC-RDMS-5"></a>
+<a id="CCC-RDMS-6"></a>
+<a id="CCC-RDMS-7"></a>
+<a id="CCC-RDMS-8"></a>
 <a id="CCC-RDMS-9"></a>
+<a id="CCC-RDMS-10"></a>
+<a id="CCC-RDMS-11"></a>
+<a id="CCC-RDMS-12"></a>
+<a id="CCC-RDMS-13"></a>
