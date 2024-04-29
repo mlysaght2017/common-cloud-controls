@@ -1,8 +1,15 @@
 # Controls: Relational Database Management Systems
 
-WIP!
+This _service-level controls_ documents an abstracted list of controls based on the [Threats for Relational Database Management Systems](./threats.md). The scope of these controls expand across cloud service providers.
 
 ## Controls Catalog
 
-| Control Id | Objective | Description | Test | Service Taxonomy Id | NIST CSF | MITRE ATT&CK Mitigations | Threats |
-|------------|-----------|-------------|------|---------------------|---------|--------------------------|---------|
+| Control Id  | Objective                                       | Description                                                        | Test                                                                                                       | NIST CSF | MITRE ATT&CK Mitigations                            | Threats     |
+| ----------- | ----------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------- | ----------- |
+| CCC.RDMS.C1 | Enforce Role-Based Access Control               | Ensure only authorized roles can access database resources.        | GIVEN a user attempts to access the database; WHEN they do not possess appropriate roles; THEN deny access | Protect  | [M1041](https://attack.mitre.org/mitigations/M1041) | [CCC.RDMS.T1](./threats.md/#CCC.RDMS.T1) |
+| CCC.RDMS.C2 | Restrict Snapshot Export Permissions            | Limit snapshot export capabilities to trusted roles.               | GIVEN a snapshot export request; WHEN the requestor is outside of trusted roles; THEN deny the request     | Protect  | [M1054](https://attack.mitre.org/mitigations/M1054) | [CCC.RDMS.T2](./threats.md/#CCC.RDMS.T2) |
+| CCC.RDMS.C3 | Enable and Protect Logging                      | Ensure logging and monitoring cannot be disabled by users.         | GIVEN a request to disable logging; WHEN it originates from a non-admin role; THEN deny the request        | Detect   | [M1030](https://attack.mitre.org/mitigations/M1030) | [CCC.RDMS.T3](./threats.md/#CCC.RDMS.T3) |
+| CCC.RDMS.C4 | Application Layer Firewalls                     | Deploy firewalls to prevent exploitation at the application layer. | GIVEN network traffic to the application; WHEN it contains malicious payloads; THEN block the traffic      | Protect  | [M1032](https://attack.mitre.org/mitigations/M1032) | [CCC.RDMS.T4](./threats.md/#CCC.RDMS.T4) |
+| CCC.RDMS.C5 | Secure Database Replication Channels            | Use encryption and authentication for database replication.        | GIVEN a database replication attempt; WHEN it uses insecure channels; THEN block and log the attempt       | Protect  | [M1042](https://attack.mitre.org/mitigations/M1042) | [CCC.RDMS.T5](./threats.md/#CCC.RDMS.T5) |
+| CCC.RDMS.C6 | Enforce Encrypted Database Connections          | Require encrypted connections for all database access.             | GIVEN a database connection attempt; WHEN it is unencrypted; THEN deny the connection                      | Protect  | [M1041](https://attack.mitre.org/mitigations/M1041) | [CCC.RDMS.T6](./threats.md/#CCC.RDMS.T6) |
+| CCC.RDMS.C7 | Validate Encryption Keys for Database Snapshots | Ensure only authorized encryption keys are used for snapshots.     | GIVEN a snapshot creation attempt; WHEN using a non-default encryption key; THEN verify the key’s validity | Protect  | [M1042](https://attack.mitre.org/mitigations/M1042) | [CCC.RDMS.T7](./threats.md/#CCC.RDMS.T7) |

@@ -1,6 +1,6 @@
 # Threats: Relational Database Management Systems
 
-This _service-level threats_ documents the most common list of threats that impacts cloud-native relational database management systems (RDBMS). The scope of these threats expand across multiple industries and sectors, tailored to the use of financial services ecosystems.
+This _service-level threats_ documents the most common list of threats that impacts cloud-native relational database management systems (RDBMS). The scope of these threats expand across cloud service providers.
 
 ## Threat Catalog
 
